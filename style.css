@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Poppins", sans-serif; */
+};
+body{
+    background-color: blueviolet; 
+}
+.holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+.wrapper{
+  width: 40vw;
+  height: 90vh;
+};
+
+.tittle{
+  text-align: center;
+}
+.categories{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.btn{
+    border-radius: 5px;
+    padding: 4px;
+    font-weight: 600;
+}
+.allLetters{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(10,1fr);
+    margin: 15px;
+}
+.letters{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 3px;    
+};
+.letterHide{
+    opacity: .5
+}
+.chosenOption{
+    display: flex;
+    text-align: center;
+}
+.chosenLetter{
+    color: white;
+    margin: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 5px red;
+    height: 20px;
+    width: 20px;
+};
+.corect{
+    color: red;
+};
+.winText{
+    font-weight: 600;
+}
+.gameOver{
+    font-weight: 600;
+}
+.attempts{
+    font-weight: 500;
+    color: blue;
+}
+.newGameBtn{
+    border-radius: 5px;
+    padding: 4px;
+    font-weight: 600;
+    display: none;
+}
+
+/* dodao Aca css za coveculjka (pozicija, z index, velicina) */
+
+
+.hangmanDiv{
+    position: relative;
+    left: 10vh;
+    top: 1vh;
+    /* border: solid 2px black; */
+    height: 100vh;
+    width: 80vh;
+}
+.coveculjak{
+    /* display: flex; */
+    /* position: relative; */
+    /* left: -150%; */
+   
+   
+}
+#vesalo{
+    position: absolute;
+    z-index: -1;
+    width: 60vh;
+    left: 5vh ;
+    top: 5vh;
+}
+#element1{
+    width: 10vh;
+    position: absolute;
+    top: 18vh;
+    left: 28.7vh;
+}
+#element2{
+    position: absolute;
+    top: 33vh;
+    left: 28.7vh;
+    width: 10vh;
+}
+
+#element3{
+        position: absolute;
+    top: 50vh;
+    left: 28.4vh;
+    width: 5vh;
+
+}
+
+#element4{
+        position: absolute;
+    top: 50vh;
+    left: 34vh;
+    width: 5vh;
+}
+
+#element5{
+     position: absolute;
+    top: 33vh;
+    left: 38.7vh;
+    width: 5vh;
+}
+#element6{
+     position: absolute;
+    top: 33vh;
+    left: 23.7vh;
+    width: 5vh;
+}
